@@ -1,1 +1,14 @@
-<p>todolist works!</p>
+<div>
+    <h1>TODO LIST</h1>
+</div>
+<section class="example-section">
+    <span class="example-list-section">
+      <ul>
+        <li *ngFor="let subtask of tasks">
+          <mat-checkbox >
+            {{subtask.name}}
+          </mat-checkbox>
+        </li>
+      </ul>
+    </span>
+  </section>
