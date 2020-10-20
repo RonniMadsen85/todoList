@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RestService } from '../webservices/rest.service';
+import {ThemePalette} from '@angular/material/core';
 
 export interface Task {
   id: string,
@@ -18,14 +19,11 @@ export class TodolistComponent implements OnInit {
 
   ngOnInit() {
     this.restService.wsGetTodos().subscribe((data: any[]) => {
-      console.log("data", data)
       this.tasks = []
       
       data.forEach(element => {
         this.tasks.push(element)
       });
-
-      console.log("tasks", this.tasks)
     });
   }
 

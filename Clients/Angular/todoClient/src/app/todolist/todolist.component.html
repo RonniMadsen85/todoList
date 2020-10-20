@@ -1,14 +1,14 @@
-<div>
-    <h1>TODO LIST</h1>
+<div class="center">
+  <h1>TODO LIST</h1>
 </div>
-<section class="example-section">
+<div class="center">
+  <section class="example-section">
     <span class="example-list-section">
-      <ul>
-        <li *ngFor="let subtask of tasks">
-          <mat-checkbox >
-            {{subtask.name}}
-          </mat-checkbox>
-        </li>
-      </ul>
+      <div *ngFor="let subtask of tasks">
+        <input type="checkbox"/>
+        {{subtask.name}}
+      </div>
     </span>
   </section>
+  </div>
+    

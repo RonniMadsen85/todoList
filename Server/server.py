@@ -1,7 +1,7 @@
 from flask import Flask, json
 from flask_cors import CORS
 
-tasks = [{"id": 1, "name": "Task 1"}, {"id": 2, "name": "Task 2"}]
+tasks = [{"id": 1, "name": "Task 1"}, {"id": 2, "name": "Task 2"}, {"id": 3, "name": "Task 3"}]
 
 api = Flask(__name__)
 CORS(api)
